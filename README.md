@@ -1,0 +1,1 @@
+# Fastapi application example for dependency_injector issue
