@@ -17,7 +17,7 @@ def create_app():
     )
     app.container = Container()
     app.container.init_resources()
-    app.container.wire(modules=[sys.modules[__name__]])
+    app.container.wire(packages=[routes])
     app.logger = init_logger("DEBUG")
 
     app.include_router(routes.api_router)
